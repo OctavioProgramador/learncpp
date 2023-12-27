@@ -1,0 +1,3 @@
+﻿  Compatibilidad c++ 20.cpp
+C:\Users\Octavio\source\repos\4.9 Boolean values\Compatibilidad c++ 20.cpp(46,7): warning C4305: '=': truncamiento de 'int' a 'bool'
+  4.9 Boolean values.vcxproj -> C:\Users\Octavio\source\repos\4.9 Boolean values\x64\Debug\4.9 Boolean values.exe
