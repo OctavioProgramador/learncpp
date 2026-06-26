@@ -13,13 +13,13 @@ int main()
 	[[maybe_unused]] constexpr std::uint8_t mask6 { 0b0100'0000 }; // represents bits 6 
 	[[maybe_unused]] constexpr std::uint8_t mask7 { 0b1000'0000 }; // represents bits 7 
 
-	std::uint8_t flags { 0b0000'0101 }; // 8 bits in size means room for 8 flags
-	
-	std::cout << "bit 1 is " << (static_cast<bool>(flags & mask1) ? "on\n" : "off\n");
+	std::uint8_t flags{ 0b0000'0101 }; // 8 bits in size means room for 8 flags
 
-	flags |= mask1; // turn on a bit
-	
-	std::cout << "bit 1 is " << (static_cast<bool>(flags & mask1) ? "on\n" : "off\n");
+	std::cout << "bit 2 is " << (static_cast<bool>(flags & mask2) ? "on\n" : "off\n");
+	flags ^= mask2; // flip bit 2
+	std::cout << "bit 2 is " << (static_cast<bool>(flags & mask2) ? "on\n" : "off\n");
+	flags ^= mask2; // flip bit 2
+	std::cout << "bit 2 is " << (static_cast<bool>(flags & mask2) ? "on\n" : "off\n");
 
 	return 0;
 }
