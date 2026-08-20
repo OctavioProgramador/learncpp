@@ -399,3 +399,5 @@ FodyWeavers.xsd
 
 # My bin folder
 bin/
+
+.DS_Store
